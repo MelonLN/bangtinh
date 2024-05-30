@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng tính</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Bảng tính</h1>
+        </header>
+        <div id="tools-container">
+            <button class="button" id="createNewTable">Tạo bảng mới</button>
+            <div id="showshower">
+                <ul id="nav2">
+                    <li><a href="https://github.com/MelonLN"><img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="Github"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="tableContainer">
+            <div id="contai">
+                <div class="button-container">
+                    <p>Bảng 1</p>
+                    <button class="button" id="addRow">Thêm hàng</button>
+                    <button class="button" id="addColumn">Thêm cột</button>
+                    <button class="button" id="deleteRow">Xoá hàng</button>
+                    <button class="button" id="deleteColumn">Xoá cột</button>
+                </div>
+                <table id="dynamicTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Cột 1</th>
+                            <th>Cột 2</th>
+                            <th>Cột 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Hàng 1</th>
+                            <td><input type="number" class="column1"></td>
+                            <td><input type="number" class="column2"></td>
+                            <td><input type="number" class="column3"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Tổng</th>
+                            <td class="total1"></td>
+                            <td class="total2"></td>
+                            <td class="total3"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="totalResult" id="totaldynamicTable">Kết quả: 0</div>
+                <button class="button" id="calculateTotal">Tính toán</button>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <span id="foot">
+            Để phản hồi hoặc báo cáo sự cố, hãy truy cập kho lưu trữ github của tôi và mở 'issues'<br>
+            Bởi MelonLN
+        </span>
+    </footer>       
+    <script src="./main.js"></script>
+</body>
+</html>
