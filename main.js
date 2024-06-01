@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let total = 0;
             const columnValues = table.querySelectorAll(`.column${i}`);
             columnValues.forEach(input => {
-                total += parseInt(input.value) || 0;
+                total += parseFloat(input.value) || 0;
             });
             table.querySelector(`tfoot td.total${i}`).textContent = total;
         }
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const totalCells = table.querySelectorAll('tfoot td');
         let sum = 0;
         totalCells.forEach(cell => {
-            sum += parseInt(cell.textContent) || 0;
+            sum += parseFloat(cell.textContent) || 0;
         });
         document.getElementById(`total${tableId}`).innerText = `Kết quả: ${sum}`;
     }
