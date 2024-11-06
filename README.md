@@ -1,2 +1,2 @@
 # bangtinh
-https://github.com/MelonLN/bangtinh
+https://melonln.github.io/bangtinh
